@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { MenuItems } from './MenuItems'
+import {Button} from '../button'
 import './nav.css'
 
 
@@ -17,7 +18,7 @@ class Navbar extends Component {
 				<div className= "menu-icon" onClick={this.handleClick}>
 					<i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
 				</div>
-				<ul className={this.state.Clicked ? 'nav-menu active' : 'nav-menu'}>
+				<ul className={this.state.Clicked ? 'nav-menu.active' : 'nav-menu'}>
 					{MenuItems.map((item, index) => {
 						return (
 							<li>
@@ -30,6 +31,7 @@ class Navbar extends Component {
 						})
 					} 
 				</ul>
+
 			</nav>
 
 		)
