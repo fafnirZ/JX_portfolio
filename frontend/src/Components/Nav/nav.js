@@ -17,7 +17,8 @@ function Navbar () {
 
 	const handleScroll = () => {
 		const offset = window.scrollY;
-		if(offset > 200) {
+		console.log(offset);
+		if(offset > 100) {
 			setScrolled(true);
 		}
 		else {
@@ -30,9 +31,14 @@ function Navbar () {
 		window.addEventListener('scroll', handleScroll)
 	})
 
+	let navbarClasses = ['NavbarItems'];
+	if(scrolled) {
+		navbarClasses.push('sticky')
+	}
+	console.log(navbarClasses);
 
 	return (
-		<nav id='navbar' className= "NavbarItems">
+		<nav id='navbar' className= {navbarClasses.join(" ")}>
 			<h1 className="navbar-logo">Jacky Xie<i className="fab fa-react"></i></h1>
 			<div className= "menu-icon" onClick={handleClick}>
 				<i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
