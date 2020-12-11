@@ -13,7 +13,7 @@ class Body extends Component {
 				texts.map((item,index) => {
 					return (
 						<div>
-							<h2 className={item.title_style}>
+							<h2 className={item.title_style} id={item.id}>
 								{item.title}
 							</h2>
 							<p className={item.body_style}>

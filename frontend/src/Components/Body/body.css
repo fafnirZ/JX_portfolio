@@ -1,3 +1,7 @@
+.sections {
+	overflow-y:scroll;
+	scroll-behavior:smooth;
+}
 .about_title {
 	padding : 1rem;
 }
