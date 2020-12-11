@@ -13,23 +13,24 @@ class Body extends Component {
 				texts.map((item,index) => {
 					return (
 						<div>
-							<h1>
+							<h2 className={item.title_style}>
 								{item.title}
-							</h1>
-							<p>
+							</h2>
+							<p className={item.body_style}>
 								{
 									item.body.split('\n').reduce((total, line) => [total, <br/>, line])
 								}
 							</p>
+							<div>
+								<img src={item.image} className="image_icon"/>
+							</div>
 						</div>	
 						)
 				})
 
 			}
-			</div>,
-			<div>
-				<img src="macsublime.jpg"/>
 			</div>
+
 		])
 	}
 
