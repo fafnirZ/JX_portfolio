@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { MenuItems, MenuIcons } from './MenuItems'
 import {Button} from '../button'
+import {Link, animateScroll as scroll} from "react-scroll"
 import './nav.css'
 
 
@@ -36,8 +37,15 @@ class Navbar extends Component {
 					{MenuItems.map((item, index) => {
 						return (
 							<li>
-								<a className={item.cName} href={item.url}> 
+								<a className={item.cName}>
+									<Link 
+										to={item.url}									    spy={true}
+									    smooth={true}
+									    offset={-70}
+									    duration={500}
+									>
 									{item.title}
+									</Link>
 								</a>
 							</li>
 							)

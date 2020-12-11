@@ -2,13 +2,13 @@ export const MenuItems = [
 
 	{
 		title: 'About',
-		url: '#about',
+		url: 'about',
 		cName: 'nav-links'
 	},
 
 	{
 		title: 'Lorem',
-		url: '#lorem',
+		url: 'lorem',
 		cName: 'nav-links'
 	},
 	
