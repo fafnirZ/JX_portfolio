@@ -1,4 +1,5 @@
 export const MenuItems = [
+
 	{
 		title: 'First',
 		url: '',
@@ -9,6 +10,25 @@ export const MenuItems = [
 		title: 'Second',
 		url: '',
 		cName: 'nav-links'
+	},
+	
+]
+
+
+
+export const MenuIcons = [
+	{
+		title: 'github',
+		url: '',
+		cName: 'nav-icons',
+		Icon: 'fab fa-github'
+	},
+
+	{
+		title: 'linkedin',
+		url: '',
+		cName: 'nav-icons',
+		Icon: 'fab fa-linkedin'
 	},
 	
 ]
