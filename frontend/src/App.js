@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Navbar from "./Components/Nav/nav.js"
+import Body from "./Components/Body/body.js"
 import './App.css';
 
 
@@ -10,6 +11,9 @@ function App() {
       	<Navbar/>
 
       </header>
+      <body className = "App-body">
+      	<Body/>
+      </body>
     </div>
 
   );
