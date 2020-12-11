@@ -17,7 +17,7 @@ function Navbar () {
 
 	const handleScroll = () => {
 		const offset = window.scrollY;
-		console.log(offset);
+
 		if(offset > 100) {
 			setScrolled(true);
 		}
@@ -35,7 +35,7 @@ function Navbar () {
 	if(scrolled) {
 		navbarClasses.push('sticky')
 	}
-	console.log(navbarClasses);
+
 
 	return (
 		<nav id='navbar' className= {navbarClasses.join(" ")}>
