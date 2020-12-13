@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import { MenuItems, MenuIcons } from './MenuItems'
-import {Button} from '../button'
 import {Link, animateScroll as scroll, scrollSpy} from "react-scroll"
 import './nav.css'
 
