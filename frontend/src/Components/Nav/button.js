@@ -32,10 +32,9 @@ function To_top() {
 		console.log(buttonClasses)
 	}
 	
-
 	return (
-		<i class={buttonClasses.join(" ")}>
-		</i>
+		<span class={buttonClasses.join(" ")} onClick={handleClick}>
+		</span>
 	)
 
 

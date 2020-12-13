@@ -6,7 +6,7 @@ import './App.css';
 
 
 function App() {
-  return ([
+  return (
     <div className="App">
       <header className="App-header">
       	<Navbar/>
@@ -14,12 +14,12 @@ function App() {
       <body className = "App-body">
       	<Body/>
       </body>
-
+      <footer>
+        <To_top/>
+      </footer>
 
     </div>
-    ,
-    <To_top/>
-    ]
+
 
   );
 }
