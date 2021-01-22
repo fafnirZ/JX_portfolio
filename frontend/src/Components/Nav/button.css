@@ -1,0 +1,14 @@
+.fa-caret-square-up {
+	size: 10rem;
+	padding: 2rem;
+	float:bottom-right;
+
+}
+.fa-caret-square-up:hover {
+	color:grey;
+}
+
+.sticky {
+	position:fixed;
+
+}
