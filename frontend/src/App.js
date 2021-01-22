@@ -15,7 +15,7 @@ function App() {
       	<Body/>
       </body>
       <footer>
-        <To_top/>
+        {/*<To_top/>*/}
       </footer>
 
     </div>

@@ -68,19 +68,26 @@ function Navbar () {
 				{MenuItems.map((item, index) => {
 					return (
 						<li>
-							<a className={item.cName} onClick={()=>setScrolled(true)}>
-								<Link 
+							<a className={item.cName}>
+								{scrolled ? 
+									<Link 
 									to={item.url}									    
 									spy={true}
 								    smooth={true}
 								    offset={-90}
-								    duration={500}
-								>
-								{console.log(scrollY)}
-								{console.log(navbarClasses)}
-								{item.title}
-
-								</Link>
+								    duration={500}>
+									{item.title}
+									</Link>
+									:
+									<Link 
+									to={item.url}
+									spy={true}
+								    smooth={true}
+									offset={-160}
+									duration={500}>
+									{item.title}
+									</Link>
+								}
 							</a>
 						</li>
 						)
