@@ -4,36 +4,35 @@ import './body.css'
 
 
 
-class Body extends Component {
+function Body()  {
 
-	render() {
-		return ([
-			<div>
-			{
-				texts.map((item,index) => {
-					return (
+	return ([
+		<div>
+		{
+			texts.map((item,index) => {
+				return (
+					<div>
+						<h2 className={item.title_style} id={item.id}>
+							{item.title}
+						</h2>
+						<p className={item.body_style}>
+							{
+								item.body.split('\n').reduce((total, line) => [total, <br/>, line])
+							}
+						</p>
+						
 						<div>
-							<h2 className={item.title_style} id={item.id}>
-								{item.title}
-							</h2>
-							<p className={item.body_style}>
-								{
-									item.body.split('\n').reduce((total, line) => [total, <br/>, line])
-								}
-							</p>
-							<div>
-								<img src={item.image} className="image_icon"/>
-							</div>
-						</div>	
-						)
-				})
+							<img src={item.image} className="image_icon"/>
+						</div>
+						
+					</div>	
+					)
+			})
 
-			}
-			</div>
+		}
+		</div>
 
-		])
-	}
-
+	])
 
 }
 

@@ -8,6 +8,8 @@ import './nav.css'
 function Navbar () {
 	const [clicked, setClicked] = React.useState(false);
 	const [scrolled, setScrolled] = React.useState(false);
+	const [scrollY, setScrollY] = React.useState(window.scrollY);
+	
 
 
 
@@ -17,7 +19,7 @@ function Navbar () {
 
 	const handleScroll = () => {
 		const offset = window.scrollY;
-
+		setScrollY(offset);
 		if(offset > 100) {
 			setScrolled(true);
 		}
@@ -26,15 +28,21 @@ function Navbar () {
 		}
 	}
 
-
+	//initialise on mount
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll)
 	})
 
+
 	let navbarClasses = ['NavbarItems'];
+	//whenever scroll changes
 	if(scrolled) {
 		navbarClasses.push('sticky')
-	}
+	
+	};
+
+
+
 
 
 	return (
@@ -61,13 +69,16 @@ function Navbar () {
 				{MenuItems.map((item, index) => {
 					return (
 						<li>
-							<a className={item.cName}>
+							<a className={item.cName} onClick={()=>setScrolled(true)}>
 								<Link 
-									to={item.url}									    spy={true}
+									to={item.url}									    
+									spy={true}
 								    smooth={true}
-								    offset={-70}
+								    offset={-90}
 								    duration={500}
 								>
+								{console.log(scrollY)}
+								{console.log(navbarClasses)}
 								{item.title}
 
 								</Link>

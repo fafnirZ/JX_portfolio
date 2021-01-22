@@ -7,10 +7,16 @@ export const MenuItems = [
 	},
 
 	{
-		title: 'Lorem',
-		url: 'lorem',
+		title: 'NUIBot',
+		url: 'NUIBot',
 		cName: 'nav-links'
 	},
+
+	{
+		title: 'third',
+		url: 'third',
+		cName: 'nav-links'
+	}
 	
 ]
 
