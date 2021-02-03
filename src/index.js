@@ -7,12 +7,11 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-  {/*
+  
 	<BrowserRouter basename={window.location.pathname || ''}>
 		<Route exact path="/" component={App} />
 	</BrowserRouter>
-	*/}
-	<App/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
