@@ -9,6 +9,19 @@
 	padding : 0.5rem;
 }
 
+
+.nui_title {
+	padding : 1rem;
+}
+.nui_style {
+	padding : 2rem;
+}
+
+.nui_image {
+	display:absolute;
+}
+
+
 .image_icon {
 	display:absolute;
 

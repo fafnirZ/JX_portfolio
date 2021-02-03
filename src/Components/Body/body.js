@@ -22,7 +22,7 @@ function Body()  {
 						</p>
 						
 						<div>
-							<img src={item.image} className="image_icon"/>
+							<img src={item.image} className={item.image_style}/>
 						</div>
 						
 					</div>	
