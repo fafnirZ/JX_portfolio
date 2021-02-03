@@ -13,8 +13,14 @@ export const MenuItems = [
 	},
 
 	{
-		title: 'third',
-		url: 'third',
+		title: 'Website',
+		url: 'Website',
+		cName: 'nav-links'
+	}
+	,
+	{
+		title: "Other",
+		url: "Other",
 		cName: 'nav-links'
 	}
 	
