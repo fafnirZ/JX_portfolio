@@ -7,7 +7,7 @@ import './body.css'
 function Body()  {
 
 	return ([
-		<div>
+		<div className='main-body'>
 		{
 			texts.map((item,index) => {
 				return (
