@@ -1,6 +1,6 @@
 .main-body {
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr; 
+	grid-template-rows: auto auto auto; 
 	grid-template-areas: 
 	"about"
 	"page1"
@@ -15,33 +15,66 @@
 
 .about_container {
 	grid-area: "about";
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 15% auto;
+	grid-template-areas: 
+	"title1 title2"
+	"text img";
+
 }
 
 .about_title {
 	padding : 1rem;
+	grid-area: "title1";
 }
 .about_style {
 	padding : 0.5rem;
+	grid-area: text;
+	align-self: top;
+
 }
+
+.about_image {
+	grid-area: "img";
+	display:absolute;
+
+}
+
+
 
 .nui_container {
 	grid-area: "page1";
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 15% 85%;
+	grid-template-areas: 
+	"title1 title2"
+	"image text";
+
 }
 
 .nui_title {
-	padding : 1rem;
+	grid-area: title2;
+	padding-top : 2rem;
+	text-align: center;
+
 }
 .nui_style {
+	grid-area: text;
 	padding : 2rem;
+	text-align: center;
 }
 
 .nui_image {
-	display:absolute;
+	grid-area: 'image';
+
 }
 
 .other_container {
 	grid-area: "page2";
-	justify-content: space-between;
 }
 
 .other_title {
@@ -60,14 +93,9 @@
 
 
 
-.image_icon {
-	display:absolute;
 
-}
 
 
 @media screen and (max-width: 960px) {
-	.image_icon {
-		display:none;
-	}
+
 }

@@ -13,10 +13,10 @@ export const texts =
 		BeautifulSoup, Pygame, Celery, SKlearn.`,
 		title_style: "about_title",
 		body_style: "about_style",
-		image:"macsublime.jpg",
-		image_style: "image_icon",
+		image: "macsublime.jpg",
+		image_style: "about_image",
 		container: "about_container",
-		id: "about"
+		id: "about",
 	},
 
 	{
@@ -36,7 +36,8 @@ export const texts =
 		image: "bot.gif",
 		image_style: "nui_image",
 		container: "nui_container",
-		id: "NUIBot"
+		id: "NUIBot",
+
 	},
 
 	{
@@ -62,7 +63,6 @@ export const texts =
 				data collection architecture i.e. using BeautifulSoup and python Requests library
 				to collect the official numbers. As well as using Pandas to process the information to be served by the
 				Webapp.`,
-				container: "other_container",
 				title_style: "other_title",
 				body_style: "other_style"
 			},
@@ -84,7 +84,6 @@ export const texts =
 				Therefore I am in the process of learning how to fine tune a neural network such as BERT 
 				(Bidirectional Encoder Representations from Transformers) to achieve higher scores in completing
 				this Natural language processing problem.`,
-				container: "other_container",
 				title_style: "other_title",
 				body_style: "other_style"
 			},
@@ -95,7 +94,7 @@ export const texts =
 				contains no backend integration i.e. no routes are actually implemented along with a
 				webserver as there is no requirement to do so as this website only serves the purpose
 				of displaying my projects.`,
-				container: "other_container",
+
 				title_style: "other_title",
 				body_style: "other_style"
 			},
@@ -108,7 +107,6 @@ export const texts =
 				This was my very first personal project, and was created with Pygame and was the project
 				that had taught me Python and the basics of Object oriented and Event oriented programming.
 				`,
-				container: "other_container",
 				title_style: "other_title",
 				body_style: "other_style"
 

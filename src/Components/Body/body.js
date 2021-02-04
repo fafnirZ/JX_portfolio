@@ -30,8 +30,8 @@ function Body()  {
 	const contains_img = (item) => {
 		if(item.image) {
 			return(
-				<div>
-					<img src={item.image} className={item.image_style}/>
+				<div className={item.image_style}>
+					<img src={item.image}/>
 				</div>
 			)
 		}
