@@ -41,7 +41,7 @@ function Body()  {
 		if(item.children) {
 			return item.children.map((i, index) => {
 				return (
-					<div>
+					<div className={i.container}>
 						{contains_title(i)}
 						{contains_body(i)}
 						{contains_img(i)}

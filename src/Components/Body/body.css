@@ -1,11 +1,13 @@
 .main-body {
 	display: grid;
-	grid-template-rows: auto auto auto; 
+	grid-template-rows: 25% 25% auto; 
 	grid-template-areas: 
 	"about"
 	"page1"
 	"page2"
 }
+
+
 
 /*where is this prop?*/
 .sections {
@@ -18,7 +20,7 @@
 
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: 15% auto;
+	grid-template-rows: 15% 85%;
 	grid-template-areas: 
 	"title1 title2"
 	"text img";
@@ -38,8 +40,8 @@
 
 .about_image {
 	grid-area: "img";
-	display:absolute;
-
+	display: grid;
+	grid-template-columns: 1px 1px;
 }
 
 
@@ -51,7 +53,7 @@
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 15% 85%;
 	grid-template-areas: 
-	"title1 title2"
+	".. title2"
 	"image text";
 
 }
@@ -70,18 +72,24 @@
 
 .nui_image {
 	grid-area: 'image';
-
 }
 
 .other_container {
 	grid-area: "page2";
+
 }
 
 .other_title {
 	padding : 1rem;
+	grid-row: 1;
 }
-.other_style {
+.p1 > div{
+	grid-row: 2;
 	padding : 2rem;
+	background: #eee;
+}
+.p1 > div:nth-child(odd){
+	background: #ddd;
 }
 
 .other_image {
@@ -97,5 +105,7 @@
 
 
 @media screen and (max-width: 960px) {
-
+	.image_icon {
+		display:none;
+	}
 }

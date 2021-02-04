@@ -9,7 +9,7 @@
 .App {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-template-rows: 1fr auto 1fr;
+	grid-template-rows: auto auto auto;
 	grid-template-areas: 
 		"header header header"
 		"body body body"

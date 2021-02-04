@@ -64,7 +64,7 @@ export const texts =
 				to collect the official numbers. As well as using Pandas to process the information to be served by the
 				Webapp.`,
 				title_style: "other_title",
-				body_style: "other_style"
+				container: "p1"
 			},
 
 			{
@@ -85,7 +85,7 @@ export const texts =
 				(Bidirectional Encoder Representations from Transformers) to achieve higher scores in completing
 				this Natural language processing problem.`,
 				title_style: "other_title",
-				body_style: "other_style"
+				container: "p1"
 			},
 
 			{
@@ -96,7 +96,7 @@ export const texts =
 				of displaying my projects.`,
 
 				title_style: "other_title",
-				body_style: "other_style"
+				container: "p1"
 			},
 
 			
@@ -108,7 +108,7 @@ export const texts =
 				that had taught me Python and the basics of Object oriented and Event oriented programming.
 				`,
 				title_style: "other_title",
-				body_style: "other_style"
+				container: "p1"
 
 			}
 			]
