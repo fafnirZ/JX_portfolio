@@ -8,7 +8,7 @@ function Body()  {
 	const contains_title = (item) =>  {
 		if(item.title){
 			return(
-				<h2 className={item.title_style} id={item.id}>
+				<h2 className={item.title_style}>
 					{item.title}
 				</h2>
 			)
@@ -57,7 +57,7 @@ function Body()  {
 		{
 			texts.map((item,index) => {
 				return (
-					<div className={item.container}>
+					<div className={item.container} id= {item.id}>
 
 						{contains_title(item)}
 						{contains_body(item)}
