@@ -1,10 +1,11 @@
 .main-body {
 	display: grid;
+	grid-gap: 1rem;
 	grid-template-rows: 25% 25% auto; 
 	grid-template-areas: 
 	"about"
-	"page1"
-	"page2"
+	"page-one"
+	"page-two"
 }
 
 
@@ -22,44 +23,53 @@
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 15% 85%;
 	grid-template-areas: 
-	"title1 title2"
-	"text img";
+	"title image"
+	"text image";
+
+
 
 }
 
 .about_title {
 	padding : 1rem;
-	grid-area: "title1";
+	grid-area: title;
+	align-self:center;
+
 }
 .about_style {
 	padding : 0.5rem;
 	grid-area: text;
 	align-self: top;
 
+
 }
 
 .about_image {
-	grid-area: "img";
-	display: grid;
-	grid-template-columns: 1px 1px;
+	grid-area: image;
+	align-self: center;
+}
+
+.about_image > img{
+	object-fit: cover;
+	width: 100%;
+	max-height: 100%;
 }
 
 
-
 .nui_container {
-	grid-area: "page1";
+	grid-area: page-one;
 
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 15% 85%;
 	grid-template-areas: 
-	".. title2"
+	"image title"
 	"image text";
 
 }
 
 .nui_title {
-	grid-area: title2;
+	grid-area: title;
 	padding-top : 2rem;
 	text-align: center;
 
@@ -71,35 +81,41 @@
 }
 
 .nui_image {
-	grid-area: 'image';
+	grid-area: image;
 }
 
-.other_container {
-	grid-area: "page2";
+.nui_image > img{
+	object-fit: cover;
+	width: 100%;
+	max-height: 100%;
+	padding: 1rem;
+}
 
+
+
+.other_container {
+	grid-area: page-two;
+	background: #ddd;
+
+	display:grid;
+	grid-template-rows: 10% auto;
+
+	grid-template-areas: 
+	"title"
+	"paragraphs"
 }
 
 .other_title {
-	padding : 1rem;
-	grid-row: 1;
-}
-.p1 > div{
-	grid-row: 2;
-	padding : 2rem;
+	grid-area: title;
+	padding-top : 2rem;
+	text-align: center;
 	background: #eee;
 }
-.p1 > div:nth-child(odd){
-	background: #ddd;
+
+.p {
+	text-align:center;
+	padding:1rem;
 }
-
-.other_image {
-	display:absolute;
-}
-
-
-
-
-
 
 
 

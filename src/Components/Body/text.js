@@ -43,6 +43,7 @@ export const texts =
 	{
 		title: 'Other Projects',
 		container: "other_container",
+		title_style: "other_title",
 		id: "Other",
 		children: [
 			{
@@ -63,8 +64,8 @@ export const texts =
 				data collection architecture i.e. using BeautifulSoup and python Requests library
 				to collect the official numbers. As well as using Pandas to process the information to be served by the
 				Webapp.`,
-				title_style: "other_title",
-				container: "p1"
+				title_style: "p_title",
+				container: "p"
 			},
 
 			{
@@ -84,8 +85,8 @@ export const texts =
 				Therefore I am in the process of learning how to fine tune a neural network such as BERT 
 				(Bidirectional Encoder Representations from Transformers) to achieve higher scores in completing
 				this Natural language processing problem.`,
-				title_style: "other_title",
-				container: "p1"
+				title_style: "p_title",
+				container: "p"
 			},
 
 			{
@@ -95,8 +96,8 @@ export const texts =
 				webserver as there is no requirement to do so as this website only serves the purpose
 				of displaying my projects.`,
 
-				title_style: "other_title",
-				container: "p1"
+				title_style: "p_title",
+				container: "p"
 			},
 
 			
@@ -107,8 +108,8 @@ export const texts =
 				This was my very first personal project, and was created with Pygame and was the project
 				that had taught me Python and the basics of Object oriented and Event oriented programming.
 				`,
-				title_style: "other_title",
-				container: "p1"
+				title_style: "p_title",
+				container: "p"
 
 			}
 			]
