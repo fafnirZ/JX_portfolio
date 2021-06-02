@@ -26,14 +26,14 @@ export const MenuItems = [
 export const MenuIcons = [
 	{
 		title: 'github',
-		url: '',
+		url: 'https://github.com/fafnirZ',
 		cName: 'nav-icons',
 		Icon: 'fab fa-github'
 	},
 
 	{
 		title: 'linkedin',
-		url: '',
+		url: 'https://www.linkedin.com/in/jacky-xie/',s
 		cName: 'nav-icons',
 		Icon: 'fab fa-linkedin'
 	},
