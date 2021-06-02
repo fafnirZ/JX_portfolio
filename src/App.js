@@ -14,8 +14,7 @@ function App() {
       <body className = "App-body">
       	<Body/>
       </body>
-      <footer>
-        {/*<To_top/>*/}
+      <footer className = "App-footer">
       </footer>
 
     </div>

@@ -1,31 +1,123 @@
+.main-body {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-rows: 1fr 1fr auto; 
+	grid-template-areas: 
+	"about"
+	"page-one"
+	"page-two"
+}
+
+
+
+/*where is this prop?*/
 .sections {
 	overflow-y:scroll;
 	scroll-behavior:smooth;
 }
+
+.about_container {
+	grid-area: "about";
+	padding-left: 1rem;
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 35% 65%;
+	grid-template-areas: 
+	"title image"
+	"text image";
+
+
+}
+
 .about_title {
 	padding : 1rem;
+	grid-area: title;
+	align-self:end;
+
 }
 .about_style {
 	padding : 0.5rem;
+	grid-area: text;
+	align-self: top;
+
+
 }
 
+.about_image {
+	grid-area: image;
+	align-self: center;
+}
+
+.about_image > img{
+	object-fit: cover;
+	width: 100%;
+	max-height: 100%;
+}
+
+
+.nui_container {
+	grid-area: page-one;
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 45% 55%;
+	grid-template-areas: 
+	"image title"
+	"image text";
+
+}
 
 .nui_title {
-	padding : 1rem;
+	grid-area: title;
+	padding-top : 2rem;
+	text-align: center;
+	align-self:end;
+
 }
 .nui_style {
+	grid-area: text;
 	padding : 2rem;
+	text-align: center;
 }
 
 .nui_image {
-	display:absolute;
+	grid-area: image;
+}
+
+.nui_image > img{
+	object-fit: cover;
+	width: 100%;
+	max-height: 100%;
+	padding: 1rem;
 }
 
 
-.image_icon {
-	display:absolute;
 
+.other_container {
+	grid-area: page-two;
+
+	display:grid;
+	grid-template-rows: 10% auto;
+
+	grid-template-areas: 
+	"title"
+	"paragraphs"
 }
+
+.other_title {
+	grid-area: title;
+	padding-top : 2rem;
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+
+.p {
+	text-align:center;
+	padding:1rem;
+}
+
+
 
 
 @media screen and (max-width: 960px) {
