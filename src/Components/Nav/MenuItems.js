@@ -33,7 +33,7 @@ export const MenuIcons = [
 
 	{
 		title: 'linkedin',
-		url: 'https://www.linkedin.com/in/jacky-xie/',s
+		url: 'https://www.linkedin.com/in/jacky-xie/',
 		cName: 'nav-icons',
 		Icon: 'fab fa-linkedin'
 	},
